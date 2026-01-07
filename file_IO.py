@@ -20,45 +20,45 @@ write() : to write into file
 
 
 '''
-# a = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'r')
-# data = a.read()
-# print(data)
-# a.close()
+a = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'r')
+data = a.read()
+print(data)
+a.close()
 
-# b = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'w')
-# wr = b.write("This Line write with write() function that erase all Old Data and add this New line ")
-# b.close()
+b = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'w')
+wr = b.write("This Line write with write() function that erase all Old Data and add this New line ")
+b.close()
 
-# c= open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'a')
+c= open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'a')
 
-# ap = c.write("\nThis Line Write with Append Mode that not erace old data it write at end of the file ")
-# c.close()
+ap = c.write("\nThis Line Write with Append Mode that not erace old data it write at end of the file ")
+c.close()
 
-# """
-# Note: in Write 'w' and append 'a' if there is no Existing file so, "w" and "a" mode create File Automatically
-# """
-# d = open("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data1.txt","w")
-# # This Cretae automatically Test_data1.txt file in currant folder
-# d.close()
+"""
+Note: in Write 'w' and append 'a' if there is no Existing file so, "w" and "a" mode create File Automatically
+"""
+d = open("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data1.txt","w")
+# This Cretae automatically Test_data1.txt file in currant folder
+d.close()
 
-# e = open("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data2.txt","a")
-# e.close()
+e = open("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data2.txt","a")
+e.close()
 
-# f = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", "r+")
-# f.write("Data overwrite in file from the Bignning ")
-# print(f.read())# Maybe Data is not show full Bec..  The curcer is read file after Data Add of abow data
-# f.close()
+f = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", "r+")
+f.write("Data overwrite in file from the Bignning ")
+print(f.read())# Maybe Data is not show full Bec..  The curcer is read file after Data Add of abow data
+f.close()
 
-# g = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'w+')
-# g.write("This Line is Write with W+ mode that erase all Old data")
-# print(g.read())
-# g.close()
+g = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'w+')
+g.write("This Line is Write with W+ mode that erase all Old data")
+print(g.read())
+g.close()
 
-# h = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt",'a+')
-# print(h.read()) 
-# h.write("abc")
-# print(h.read())
-# h.close()
+h = open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt",'a+')
+print(h.read()) 
+h.write("abc")
+print(h.read())
+h.close()
 
 """
 With Syntax:
@@ -95,38 +95,38 @@ Q2>WAF that replace all occurrences of “java” with “python” in above fil
 Q3>Search if the word "learning" exists in the file or not."""
 
 # Q1
-# with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt") as f:
-#     data = f.read()
+with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt") as f:
+    data = f.read()
 
-# with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt", 'w')as f:
+with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt", 'w')as f:
 
-#     f.writelines("""Hii Everyone.
-# we are learning File I/O.  
-# using Java
-# I like programming in Java""")
+    f.writelines("""Hii Everyone.
+we are learning File I/O.  
+using Java
+I like programming in Java""")
 
 ## Q2>
-# with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt") as f:
-#     data =f.read()
-# new_data = data.replace("Java", "Python")
-# print(new_data)
+with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt") as f:
+    data =f.read()
+new_data = data.replace("Java", "Python")
+print(new_data)
 
-# with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt", 'w') as f:
-#     f.write(new_data)
+with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt", 'w') as f:
+    f.write(new_data)
 
 # Q3>
-# def check_word(word):
-#     with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt") as f:
-#         data = f.read()
+def check_word(word):
+    with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt") as f:
+        data = f.read()
 
-#         if word in data:
-#             print("Yes")
-#         else:
-#             print("No")
-#     return 0
+        if word in data:
+            print("Yes")
+        else:
+            print("No")
+    return 0
 
-# word = "Python"
-# check_word(word)
+word = "Python"
+check_word(word)
 
 
 """
@@ -135,35 +135,36 @@ Q5> From a file containing numbers separated by comma, print the count of even n
 """
 # Q4>
 
-# def check_line(word):
-#     data = True
-#     line_no = 1
-#     with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt", 'r') as f:
-#         while data:
-#             data = f.readline()
-#             if word in data:
-#                 print(line_no)
-#                 return
-#             line_no +=1
+def check_line(word):
+    data = True
+    line_no = 1
+    with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt", 'r') as f:
+        while data:
+            data = f.readline()
+            if word in data:
+                print(line_no)
+                return
+            line_no +=1
 
-#         return -1
+        return -1
 
-# check_line("Python")
+check_line("Python")
 
 # Q5 >
 
-# def count_even_no():
-#     with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt")as f:
-#         data = f.read()
-#         # print(data)
+def count_even_no():
+    with open("D:\Code\Python\YT\Apna_Collage\File_IO\practice.txt")as f:
+        data = f.read()
+        # print(data)
         
-#         nums = data.split(",")
-#         # print(nums)
-#         count = 0
+        nums = data.split(",")
+        # print(nums)
+        count = 0
 
-#         for i in nums:
-#             if (int(i)%2 == 0):
-#                 count += 1 
-#     return count
+        for i in nums:
+            if (int(i)%2 == 0):
+                count += 1 
+    return count
                 
-# print(count_even_no())
+
+print(count_even_no())
