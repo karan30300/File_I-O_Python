@@ -68,19 +68,19 @@ with opne("file_name.txt", "mode") as f:
     data = f.read()
 """
 
-# with open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'r') as ab:
-#     demo = ab.read()
-#     print(demo) #It close File Auto..
+with open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'r') as ab:
+    demo = ab.read()
+    print(demo) #It close File Auto..
 
-# with open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'w')as write_f:
-#     write_f.write("data write with WITH Syntax")
-#     print(write_f)
+with open("D:\Code\Python\YT\Apna_Collage\File_IO\data.txt", 'w')as write_f:
+    write_f.write("data write with WITH Syntax")
+    print(write_f)
 
-# """with the help of OS module we can remove/delete File """
-# import os
+"""with the help of OS module we can remove/delete File """
+import os
 
-# os.remove("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data2.txt")
-# os.remove("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data1.txt")
+os.remove("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data2.txt")
+os.remove("D:\Code\Python\YT\Apna_Collage\File_IO\Test_data1.txt")
 
 
 """Practice File_IO"""
@@ -168,3 +168,4 @@ def count_even_no():
                 
 
 print(count_even_no())
+
